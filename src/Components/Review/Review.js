@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import "./Review.css";
 
-const Review = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const Review = (props) => {
+  const { name, review } = props.review;
+  return (
+    <div className="review">
+      <h3>Name:{name}</h3>
+      <p>{review}</p>
+    </div>
+  );
 };
 
 export default Review;

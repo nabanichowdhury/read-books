@@ -1,0 +1,12 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.home-container img {
+  width: 500px;
+}
+.load-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}

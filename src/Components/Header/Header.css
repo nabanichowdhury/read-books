@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(201, 153, 252);
+  height: 50px;
+}
+.header a {
+  font-size: 1000;
+  color: rebeccapurple;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
