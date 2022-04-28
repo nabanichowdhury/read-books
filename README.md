@@ -1,10 +1,13 @@
+Link of my site is :[website](https://jocular-swan-2caf21.netlify.app/)
+Name:Read book for life
 This website contains A project using react router .
 In this website :
-1.I used react router.
-2.I used custom hook.
-3.I used Recharts to install some components of graph and made some different type of graph
-4.I made some components and using react router I used those components.
-5.I also used one custom hook in different component rather calling the state again and again.
+
+- I used react router.
+- I used custom hook.
+- I used Recharts to install some components of graph and made some different type of graph
+- I made some components and using react router I used those components.
+- I also used one custom hook in different component rather calling the state again and again.
 
 ## Available Scripts
 
