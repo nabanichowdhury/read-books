@@ -1,6 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website contains A project using react router .
+In this website :
+1.I used react router.
+2.I used custom hook.
+3.I used Recharts to install some components of graph and made some different type of graph
+4.I made some components and using react router I used those components.
+5.I also used one custom hook in different component rather calling the state again and again.
 
 ## Available Scripts
 
