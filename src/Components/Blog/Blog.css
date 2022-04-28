@@ -1,0 +1,6 @@
+@media only screen and (max-width: 688px) {
+  .blog {
+    width: 80%;
+    overflow-x: hidden;
+  }
+}

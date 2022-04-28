@@ -34,7 +34,9 @@ const Home = () => {
         ))}
       </div>
       <Link to="/reviews">
-        <button>Review order</button>
+        <button className="review-button">
+          <h1>Show all reviews</h1>
+        </button>
       </Link>
     </div>
   );

@@ -1,11 +1,16 @@
 import React from "react";
 import {
+  Area,
+  AreaChart,
   Bar,
   BarChart,
   CartesianGrid,
   Cell,
+  Legend,
   Line,
   LineChart,
+  Pie,
+  PieChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -53,7 +58,7 @@ const DashBoard = () => {
   ];
 
   return (
-    <div>
+    <div className="dash-board">
       <h1>Line Chart</h1>
       <LineChart
         width={600}
@@ -68,11 +73,56 @@ const DashBoard = () => {
         <Tooltip />
       </LineChart>
       <h1>Bar chart</h1>
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart width={150} height={40} data={data}>
-          <Bar dataKey="investment" fill="#8884d8" />
-        </BarChart>
-      </ResponsiveContainer>
+      <BarChart width={730} height={250} data={data}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="investment" fill="#8884d8" />
+      </BarChart>
+      <h1>Pie Chart</h1>
+      <PieChart width={730} height={250}>
+        <Pie
+          data={data}
+          dataKey="investment"
+          nameKey="month"
+          cx="50%"
+          cy="50%"
+          outerRadius={50}
+          fill="#8884d8"
+          label
+        />
+      </PieChart>
+      <h1>Area Chart</h1>
+      <AreaChart
+        width={730}
+        height={250}
+        data={data}
+        margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+      >
+        <defs>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <XAxis dataKey="name" />
+        <YAxis />
+        <CartesianGrid strokeDasharray="3 3" />
+        <Tooltip />
+        <Area
+          type="monotone"
+          dataKey="investment"
+          stroke="#8884d8"
+          fillOpacity={1}
+          fill="url(#colorUv)"
+        />
+      </AreaChart>
     </div>
   );
 };

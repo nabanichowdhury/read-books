@@ -1,8 +1,9 @@
 import React from "react";
+import "./Blog.css";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="blog">
       <h1>Q1.What is Semantic Tag ?</h1>
       <p>
         Ans:Semantic tags are those tags by which we can understand the actual
